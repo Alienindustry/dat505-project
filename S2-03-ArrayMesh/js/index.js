@@ -1,5 +1,5 @@
 var renderer, scene, camera;
-
+//this is a comment
 function init() {
   scene = new THREE.Scene();
 
@@ -26,7 +26,7 @@ function init() {
   //Create a two dimensional grid of objects, and position them accordingly
   for (var x = -45; x <= 45; x += 5) { // Start from -45 and sequentially add one every 5 pixels
     for (var y = -30; y <= 30; y += 5) {
-      var boxGeometry = new THREE.BoxGeometry(3, 6, 3);
+      var boxGeometry = new THREE.BoxGeometry(3, 10, 3);
       //The color of the material is assigned a random color
       var boxMaterial = new THREE.MeshLambertMaterial({color: Math.random() * 0xFFFFFF});
       var box = new THREE.Mesh(boxGeometry, boxMaterial);
@@ -35,7 +35,7 @@ function init() {
 
       box.position.x = x;
       box.position.z = y;
-      box.scale.y = 0.5;
+      box.scale.y = 4.5;
 
       scene.add(box);
       cubes.push(box);
