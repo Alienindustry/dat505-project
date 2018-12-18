@@ -35,7 +35,7 @@ function init() {
       box.position.x = x;
       box.position.z = y;
       box.scale.y = 0.5;//flattens boxes 36
-
+// looking to change code again line 38
       scene.add(box);
       cubes.push(box);
     }
